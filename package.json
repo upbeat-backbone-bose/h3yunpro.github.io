@@ -1,0 +1,28 @@
+{
+  "name": "h3yun-pdocs",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "氚云专业版开发者扩展文档",
+  "license": "CC-BY-4.0",
+  "engines": {
+    "node": "^18.20.0 || >=20.0.0"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:dev-clean": "vuepress dev docs --clean-cache --clean-temp",
+    "docs:build": "vuepress build docs --clean-cache --clean-temp",
+    "docs:preview": "http-server dist",
+    "vp-update": "npx vp-update"
+  },
+  "devDependencies": {
+    "@vuepress/bundler-webpack": "2.0.0-rc.19",
+    "http-server": "^14.1.1",
+    "sass-embedded": "^1.83.4",
+    "sass-loader": "^16.0.4",
+    "typescript": "^5.7.2",
+    "vue": "^3.5.13",
+    "vuepress": "2.0.0-rc.19",
+    "vuepress-theme-plume": "1.0.0-rc.129",
+    "@iconify/json": "^2.2.305"
+  }
+}
