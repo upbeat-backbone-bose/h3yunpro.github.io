@@ -1,13 +1,10 @@
-import path from 'path'
 import { webpackBundler } from '@vuepress/bundler-webpack'
 import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
 
-const sourceDir = path.resolve(__dirname, '../../')
 
 export default defineUserConfig({
   base: '/',
-  dest: `${sourceDir}/dist`,
   lang: 'zh-CN',
   title: '氚专开发者扩展文档',
   description: '氚云专业版开发者扩展文档',
