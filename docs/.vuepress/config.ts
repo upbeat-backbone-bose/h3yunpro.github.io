@@ -4,7 +4,7 @@ import { plumeTheme } from 'vuepress-theme-plume'
 
 
 export default defineUserConfig({
-  base: '/',
+  base: '/h3yun-pdocs/',
   lang: 'zh-CN',
   title: '氚专开发者扩展文档',
   description: '氚云专业版开发者扩展文档',
@@ -20,10 +20,10 @@ export default defineUserConfig({
 
   theme: plumeTheme({
     /* 添加您的部署域名, 有助于 SEO, 生成 sitemap */
-    // hostname: 'https://your_site_url',
+    hostname: 'https://h3yunpro.github.io/h3yun-pdocs/',
 
     /* 文档仓库配置，用于 editLink */
-    // docsRepo: '',
+    docsRepo: 'https://github.com/h3yunpro/h3yun-pdocs.git',
     // docsDir: 'docs',
     // docsBranch: '',
 
