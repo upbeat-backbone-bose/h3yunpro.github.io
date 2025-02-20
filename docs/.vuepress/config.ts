@@ -12,7 +12,7 @@ export default defineUserConfig({
   head: [
     // 配置站点图标
     ['link', { rel: 'icon', type: 'image/png', href: '/logo.png' }],
-    ['link', { rel: 'stylesheet', href: './custom.css' }]
+    ['link', { rel: 'stylesheet', href: '/custom.css' }]
   ],
 
   bundler: webpackBundler(),
@@ -35,10 +35,8 @@ export default defineUserConfig({
         timeStyle: 'short',
       }
     },
-    // contributors: true,
-    changelog: true,
-
-
+    contributors: true,
+    changelog: false,
 
     /**
      * 博客
@@ -139,7 +137,7 @@ export default defineUserConfig({
         //     rust: true,       // ::: rust-repl
         //     kotlin: true,     // ::: kotlin-repl
         //   },
-        //   imageSize: 'local', // 启用 自动填充 图片宽高属性，避免页面抖动
+        imageSize: 'all', // 启用 自动填充 图片宽高属性，避免页面抖动
       },
 
       /**

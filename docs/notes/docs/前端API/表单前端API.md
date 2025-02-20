@@ -14,6 +14,7 @@ permalink: /docs/form-js-api/
 
 ::: tip
 由于氚云有的前端API会使用到回调函数，而在回调函数中使用 ```this``` 关键字会出现指向错误，所以建议在外层使用变量将 ```this``` 实例转存，如下：
+
 ``` js
 // 加载事件
 OnLoad: function() {
@@ -295,7 +296,7 @@ var rowCount = that.子表编码.GetRowsCount();
 
 ## 前端Ajax请求后端
 
-利用Ajax技术，异步请求后端，触发表单后端OnSubmit事件，[使用示例](/doc/js-example?id=表单前端onload事件-bindchange-post-请求后端)。
+利用Ajax技术，异步请求后端，触发表单后端OnSubmit事件，[使用示例](/docs/js-example?id=表单前端onload事件-bindchange-post-请求后端)。
 
 ``` js
 $.SmartForm.PostForm(
@@ -382,7 +383,7 @@ $.IShowForm(schemaCode, objectId, params, checkIsChange, showlist, {
 
 ## 获取弹窗调用方传递的参数
 
-如果本表单是通过$.IShowForm打开的，并且有传递params，则可以通过 `$.IGetParams` 函数获取params中指定属性名对应的属性值。
+如果本表单是通过 `$.IShowForm` 打开的，并且有传递params，则可以通过 `$.IGetParams` 函数获取params中指定属性名对应的属性值。
 
 ``` js
 var param1 = $.IGetParams("param1");
@@ -391,7 +392,7 @@ var param1 = $.IGetParams("param1");
 
 ## 获取设备经纬度
 
-1、用于获取用户当前定位（其精度和位置控件一致），但是仅限钉钉移动端，所以使用前，需要判断一下当前表单所处环境。
+1. 用于获取用户当前定位（其精度和位置控件一致），但是仅限钉钉移动端，所以使用前，需要判断一下当前表单所处环境。
 
 示例：
 ``` js
@@ -408,7 +409,7 @@ if ($.SmartForm.ResponseContext.IsMobile) {
 }
 ```
 
-2、其他客户端（浏览器、钉钉工作台等），可以使用原生JS代码实现（需注意考虑兼容性）。
+2. 其他客户端（浏览器、钉钉工作台等），可以使用原生JS代码实现（需注意考虑兼容性）。
 示例：
 ``` js
 if ($.SmartForm.ResponseContext.IsMobile) {
