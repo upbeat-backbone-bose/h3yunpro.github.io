@@ -4,14 +4,14 @@ import { plumeTheme } from 'vuepress-theme-plume'
 
 
 export default defineUserConfig({
-  base: '/h3yun-pdocs/',
+  base: '/',
   lang: 'zh-CN',
   title: '氚专开发者扩展文档',
   description: '氚云专业版开发者扩展文档',
 
   head: [
     // 配置站点图标
-    ['link', { rel: 'icon', type: 'image/png', href: './logo.png' }],
+    ['link', { rel: 'icon', type: 'image/png', href: '/logo.png' }],
     ['link', { rel: 'stylesheet', href: './custom.css' }]
   ],
 
@@ -28,7 +28,7 @@ export default defineUserConfig({
     // docsBranch: '',
 
     /* 页内信息 */
-    // editLink: true,
+    editLink: false,
     lastUpdated: {
       formatOptions: {
         dateStyle: 'short',
@@ -38,21 +38,21 @@ export default defineUserConfig({
     // contributors: true,
     changelog: true,
 
-    
+
 
     /**
      * 博客
      * @see https://theme-plume.vuejs.press/config/basic/#blog
      */
     // blog: false, // 禁用博客
-    // blog: {
-    //   postList: true, // 是否启用文章列表页
-    //   tags: true, // 是否启用标签页
-    //   archives: true, // 是否启用归档页
-    //   categories: true, // 是否启用分类页
-    //   postCover: 'right', // 文章封面位置
-    //   pagination: 15, // 每页显示文章数量
-    // },
+    blog: {
+      postList: true, // 是否启用文章列表页
+      tags: true, // 是否启用标签页
+      archives: true, // 是否启用归档页
+      categories: true, // 是否启用分类页
+      postCover: 'right', // 文章封面位置
+      pagination: 15, // 每页显示文章数量
+    },
 
     /* 博客文章页面链接前缀 */
     article: '/article/',

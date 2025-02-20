@@ -4,7 +4,6 @@ createTime: 2025/02/17 19:06:25
 permalink: /docs/list-js-api/
 ---
 
-
 列表前端只有一个列表按钮点击事件：```$.ListView.ActionPreDo```，所以本篇的API都是用在按钮点击时的处理上。
 
 

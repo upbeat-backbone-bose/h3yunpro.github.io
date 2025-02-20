@@ -1,5 +1,5 @@
 ---
-title: 表单前端控件GetValue&SetValue
+title: 表单前端GetValue&SetValue
 createTime: 2025/02/17 19:06:15
 permalink: /docs/form-js-set-get/
 ---
@@ -7,7 +7,11 @@ permalink: /docs/form-js-set-get/
 
 由于不同控件类型，在赋值和取值（即：SetValue/GetValue）时数据结构有一定差别，所以本篇做一个特别说明。
 
-!> 注意：本文中的 ```that``` 指代的是 ```this```，不直接使用this是因为在回调事件中this的指向是错的（具体原因请移步：[表单前端API this](/doc/form-js-api?id=this)），所以为了避免误用，本文统一用 ```that```。
+::: warning
+本文中的 ```that``` 指代的是 ```this```，不直接使用 `this` 是因为在回调事件中 `this` 的指向是错的（具体原因请移步：[表单前端API-this](/docs/form-js-api?id=this)）。
+
+为了使用时统一，本文一律把  `this` 替换为 `that`。
+:::
 
 
 ## 单行文本/多行文本/单选框/下拉框/流水号
