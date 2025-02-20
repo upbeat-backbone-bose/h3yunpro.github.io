@@ -48,9 +48,9 @@ that.控件编码.SetValue("");
 
 此类控件取值和赋值不一样，取值时返回的是字符串数组，而赋值时传入字符串即可。
 
-- 人员单选控件的值是用户Id，这个Id可以通过SQL查询 [系统-用户表 H_User](/doc/database?id=系统-用户表-h_user) 表来获取
+- 人员单选控件的值是用户Id，这个Id可以通过SQL查询 [系统-用户表 H_User](/docs/database?id=系统-用户表-h_user) 表来获取
 
-- 人员单选控件的值是部门Id，这个Id可以通过SQL查询 [系统-部门表 H_Organizationunit](/doc/database?id=系统-部门表-h_organizationunit) 表来获取
+- 人员单选控件的值是部门Id，这个Id可以通过SQL查询 [系统-部门表 H_Organizationunit](/docs/database?id=系统-部门表-h_organizationunit) 表来获取
 
 取值：
 ``` js
@@ -83,9 +83,9 @@ that.控件编码.SetValue("");
 
 此类控件取值和赋值都是字符串数组。
 
-- 人员多选控件的值是用户Id的字符串数组，这个Id可以通过SQL查询 [系统-用户表 H_User](/doc/database?id=系统-用户表-h_user) 表来获取
+- 人员多选控件的值是用户Id的字符串数组，这个Id可以通过SQL查询 [系统-用户表 H_User](/docs/database?id=系统-用户表-h_user) 表来获取
 
-- 人员多选控件的值是部门Id的字符串数组，这个Id可以通过SQL查询 [系统-部门表 H_Organizationunit](/doc/database?id=系统-部门表-h_organizationunit) 表来获取
+- 人员多选控件的值是部门Id的字符串数组，这个Id可以通过SQL查询 [系统-部门表 H_Organizationunit](/docs/database?id=系统-部门表-h_organizationunit) 表来获取
 
 取值：
 ``` js
@@ -213,7 +213,7 @@ that.控件编码.SetValue("2024-05-17");//无时间部分时
 that.控件编码.SetValue("2024-05-17 06:24:49");//有时间部分时
 ```
 
-> 如果是把当前时间赋值给日期控件，请参考：[前端Date Format](/doc/tool-function?id=前端date-format)
+> 如果是把当前时间赋值给日期控件，请参考：[前端Date Format](/docs/tool-function?id=前端date-format)
 
 清空控件值：
 ``` js
@@ -437,7 +437,7 @@ that.控件编码.SetValue(null);
 
 ## 子表
 
-子表控件提供了比较多的函数来操作数据，这里只演示 ```GetValue```、```ClearRows``` 函数，其他的函数请查阅：[表单前端API](/doc/form-js-api)。
+子表控件提供了比较多的函数来操作数据，这里只演示 ```GetValue```、```ClearRows``` 函数，其他的函数请查阅：[表单前端API](/docs/form-js-api)。
 
 取值：
 ``` js

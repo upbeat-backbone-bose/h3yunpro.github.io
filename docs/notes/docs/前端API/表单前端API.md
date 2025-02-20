@@ -51,7 +51,7 @@ OnLoad: function() {
 
 在表单前端代码中，有一个全局变量 ```$.SmartForm.ResponseContext```，该变量是一个对象，可用于获取到表单的相关信息，包含表单的基本信息（如：表单数据Id、表单数据状态、表单模式、是否移动端等）。
 
-此处只做常用属性介绍，完整说明请移步：[前端实例详解：$.SmartForm.ResponseContext](/doc/js-instance?id=smartformresponsecontext)
+此处只做常用属性介绍，完整说明请移步：[前端实例详解：$.SmartForm.ResponseContext](/docs/js-instance?id=smartformresponsecontext)
 
 **示例**
 
@@ -122,7 +122,7 @@ OnValidate: function( actionControl ) {
 var conValue = that.控件编码.GetValue();
 ```
 
-不同类型控件，```GetValue``` 返回的值数据结构不同，具体请移步：[表单前端控件GetValue/SetValue](/doc/form-js-set-get)
+不同类型控件，```GetValue``` 返回的值数据结构不同，具体请移步：[表单前端控件GetValue/SetValue](/docs/form-js-set-get)
 
 
 ## 设置控件值
@@ -132,7 +132,7 @@ var conValue = that.控件编码.GetValue();
 that.控件编码.SetValue(控件值);
 ```
 
-不同类型控件，```SetValue``` 要求传入的值不同，具体请移步：[表单前端控件GetValue/SetValue](/doc/form-js-set-get)
+不同类型控件，```SetValue``` 要求传入的值不同，具体请移步：[表单前端控件GetValue/SetValue](/docs/form-js-set-get)
 
 
 ## 设置控件显示/隐藏

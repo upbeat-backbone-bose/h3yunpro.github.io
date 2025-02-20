@@ -12,7 +12,6 @@ export default defineUserConfig({
   head: [
     // 配置站点图标
     ['link', { rel: 'icon', type: 'image/png', href: '/logo.png' }],
-    ['link', { rel: 'stylesheet', href: '/custom.css' }]
   ],
 
   bundler: webpackBundler(),
@@ -77,12 +76,13 @@ export default defineUserConfig({
        * @see https://theme-plume.vuejs.press/config/plugins/code-highlight/
        */
       shiki: {
-        theme: { light: 'vitesse-light', dark: 'vitesse-dark' },
+        theme: { light: 'material-theme-lighter', dark: 'material-theme-darker' },
         // 强烈建议预设代码块高亮语言，插件默认加载所有语言会产生不必要的时间开销
         languages: ['c#', 'sql', 'typescript', 'javascript', 'json'],
-        twoslash: true, // 启用 twoslash
+        twoslash: false, // 启用 twoslash
         whitespace: false, // 启用 空格/Tab 高亮
         lineNumbers: true, // 启用行号
+        collapsedLines: true, //折叠代码
       },
 
       /* 本地搜索, 默认启用 */

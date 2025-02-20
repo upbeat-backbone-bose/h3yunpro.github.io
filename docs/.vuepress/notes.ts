@@ -6,7 +6,8 @@ const docsNote = defineNoteConfig({
   sidebar: [{
     text: '基础',
     prefix: '/',
-    icon: 'ep:guide',
+    icon: 'mdi:book-open-outline',
+    collapsed: true,
     items: [
       '/docs/language/',
       '/docs/dev-tools/',
@@ -18,7 +19,8 @@ const docsNote = defineNoteConfig({
   }, {
     text: '前端API',
     prefix: '/',
-    icon: 'ep:guide',
+    icon: 'mdi:code-tags',
+    collapsed: true,
     items: [
       '/docs/form-js-api/',
       '/docs/form-js-set-get/',
@@ -28,7 +30,8 @@ const docsNote = defineNoteConfig({
   }, {
     text: '后端API',
     prefix: '/',
-    icon: 'ep:guide',
+    icon: 'mdi:server',
+    collapsed: true,
     items: [
       '/docs/biz-object/',
       '/docs/bo-set-get/',
@@ -43,7 +46,8 @@ const docsNote = defineNoteConfig({
   }, {
     text: '数据库',
     prefix: '/',
-    icon: 'ep:guide',
+    icon: 'mdi:database-outline',
+    collapsed: true,
     items: [
       '/docs/sql-report/',
       '/docs/sql-dashboard/',
@@ -52,7 +56,8 @@ const docsNote = defineNoteConfig({
   }, {
     text: '代码示例',
     prefix: '/',
-    icon: 'ep:guide',
+    icon: 'mdi:code-json',
+    collapsed: true,
     items: [
       '/docs/js-example/',
       '/docs/cs-example/',
@@ -64,7 +69,8 @@ const docsNote = defineNoteConfig({
   }, {
     text: '第三方系统集成',
     prefix: '/',
-    icon: 'ep:guide',
+    icon: 'mdi:share-variant-outline',
+    collapsed: true,
     items: [
       '/docs/req-ws/',
       '/docs/req-api/',
@@ -76,7 +82,8 @@ const docsNote = defineNoteConfig({
   }, {
     text: '其他',
     prefix: '/',
-    icon: 'ep:guide',
+    icon: 'mdi:toolbox-outline',
+    collapsed: true,
     items: [
       '/docs/automation/',
       '/docs/standard/',

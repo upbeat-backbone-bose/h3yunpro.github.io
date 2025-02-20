@@ -60,5 +60,5 @@ SELECT ObjectId AS `dataId`, Name AS `dataName` FROM i_表单编码 WHERE Status
 
 2. 可否在高级数据源中执行 `INSERT`、`UPDATE`、`DELETE` 语句？
 
-不支持，如有执行这些语句的需求，请使用后端代码去执行[后端执行SQL](/doc/exec-sql)。
+不支持，如有执行这些语句的需求，请使用后端代码去执行[后端执行SQL](/docs/exec-sql)。
 
