@@ -7,11 +7,21 @@ export default defineUserConfig({
   base: '/',
   lang: 'zh-CN',
   title: '氚专开发者扩展文档',
-  description: '氚云专业版开发者扩展文档',
+  description: '氚云文档,氚云专业版文档,氚云开发者文档,氚云专业版开发者扩展文档',
 
   head: [
     // 配置站点图标
     ['link', { rel: 'icon', type: 'image/png', href: '/logo.png' }],
+    //配置百度分析
+    ['script', {}, `
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?3ebded631a588622afe51344cf018299";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
+    `]
   ],
 
   bundler: webpackBundler(),
@@ -19,10 +29,10 @@ export default defineUserConfig({
 
   theme: plumeTheme({
     /* 添加您的部署域名, 有助于 SEO, 生成 sitemap */
-    hostname: 'https://h3yunpro.github.io/h3yun-pdocs/',
+    hostname: 'https://h3yunpro.github.io/',
 
     /* 文档仓库配置，用于 editLink */
-    docsRepo: 'https://github.com/h3yunpro/h3yun-pdocs.git',
+    docsRepo: 'https://github.com/h3yunpro/h3yunpro.github.io.git',
     // docsDir: 'docs',
     // docsBranch: '',
 

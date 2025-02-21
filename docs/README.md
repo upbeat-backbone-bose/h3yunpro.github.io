@@ -1,6 +1,6 @@
 ---
 pageLayout: home
-externalLinkIcon: false
+externalLinkIcon: true
 config:
   -
     type: hero
