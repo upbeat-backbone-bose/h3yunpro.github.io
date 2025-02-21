@@ -8,7 +8,7 @@ permalink: /docs/form-js-set-get/
 由于不同控件类型，在赋值和取值（即：SetValue/GetValue）时数据结构有一定差别，所以本篇做一个特别说明。
 
 ::: warning
-本文中的 ```that``` 指代的是 ```this```，不直接使用 `this` 是因为在回调事件中 `this` 的指向是错的（具体原因请移步：[表单前端API-this](/docs/form-js-api?id=this)）。
+本文中的 ```that``` 指代的是 ```this```，不直接使用 `this` 是因为在回调事件中 `this` 的指向是错的（具体原因请移步：[表单前端API-this](/docs/form-js-api/#this)）。
 
 为了使用时统一，本文一律把  `this` 替换为 `that`。
 :::
@@ -48,9 +48,9 @@ that.控件编码.SetValue("");
 
 此类控件取值和赋值不一样，取值时返回的是字符串数组，而赋值时传入字符串即可。
 
-- 人员单选控件的值是用户Id，这个Id可以通过SQL查询 [系统-用户表 H_User](/docs/database?id=系统-用户表-h_user) 表来获取
+- 人员单选控件的值是用户Id，这个Id可以通过SQL查询 [系统-用户表 H_User](/docs/database/#系统-用户表-h-user) 表来获取
 
-- 人员单选控件的值是部门Id，这个Id可以通过SQL查询 [系统-部门表 H_Organizationunit](/docs/database?id=系统-部门表-h_organizationunit) 表来获取
+- 人员单选控件的值是部门Id，这个Id可以通过SQL查询 [系统-部门表 H_Organizationunit](/docs/database/#系统-部门表-h-organizationunit) 表来获取
 
 取值：
 ``` js
@@ -83,9 +83,9 @@ that.控件编码.SetValue("");
 
 此类控件取值和赋值都是字符串数组。
 
-- 人员多选控件的值是用户Id的字符串数组，这个Id可以通过SQL查询 [系统-用户表 H_User](/docs/database?id=系统-用户表-h_user) 表来获取
+- 人员多选控件的值是用户Id的字符串数组，这个Id可以通过SQL查询 [系统-用户表 H_User](/docs/database/#系统-用户表-h-user) 表来获取
 
-- 人员多选控件的值是部门Id的字符串数组，这个Id可以通过SQL查询 [系统-部门表 H_Organizationunit](/docs/database?id=系统-部门表-h_organizationunit) 表来获取
+- 人员多选控件的值是部门Id的字符串数组，这个Id可以通过SQL查询 [系统-部门表 H_Organizationunit](/docs/database/#系统-部门表-h-organizationunit) 表来获取
 
 取值：
 ``` js
@@ -213,7 +213,7 @@ that.控件编码.SetValue("2024-05-17");//无时间部分时
 that.控件编码.SetValue("2024-05-17 06:24:49");//有时间部分时
 ```
 
-> 如果是把当前时间赋值给日期控件，请参考：[前端Date Format](/docs/tool-function?id=前端date-format)
+> 如果是把当前时间赋值给日期控件，请参考：[前端Date Format](/docs/tool-function/#前端-date对象转字符串)
 
 清空控件值：
 ``` js

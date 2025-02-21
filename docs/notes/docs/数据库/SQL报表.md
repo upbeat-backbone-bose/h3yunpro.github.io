@@ -13,7 +13,9 @@ permalink: /docs/sql-report/
 
 如果需要测试 ```SELECT``` 语句，也可以通过这两种方式进行测试。
 
-!> 注意：SQL报表 只能用于测试 ```SELECT``` 语句，不支持执行这些语句： ```DDL```（如：CREATE TABLE）、```DML```（如：INSERT/UPDATE/DELETE）、```DCL```（如：COMMIT/ROLLBACK）、```TCL```（如：事务）。
+::: warning
+SQL报表 只能用于测试 ```SELECT``` 语句，不支持执行这些语句： ```DDL```（如：CREATE TABLE）、```DML```（如：INSERT/UPDATE/DELETE）、```DCL```（如：COMMIT/ROLLBACK）、```TCL```（如：事务）。
+:::
 
 
 ## 使用方式

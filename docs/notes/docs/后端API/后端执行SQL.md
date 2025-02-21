@@ -14,24 +14,23 @@ SELECT VERSION()
 
 氚云不提供DDL语句的执行，更改表结构，直接在表单设计更改配置即可。
 
-?> engine实例获取，可参考此文档：[H3.IEngine](/docs/cs-instance?id=H3.IEngine)
-<br/>
-表单对应的数据库表名：```i_表单编码```，表单编码查看方式：[表单编码查看](/docs/check-code?id=表单编码查看)
-<br/>
-子表对应的数据库表名：```i_子表控件编码```，子表控件编码查看方式：[子表编码查看](/docs/check-code?id=子表编码查看)
-<br/>
-表单与系统表的表结构文档，请参考此文档：[数据库表结构详解](/docs/database)
+::: tip
+engine实例获取，可参考此文档：[H3.IEngine](/docs/cs-instance/#h3-iengine)  
+表单对应的数据库表名：```i_表单编码```，表单编码查看方式：[表单编码查看](/docs/check-code/#表单编码查看)  
+子表对应的数据库表名：```i_子表控件编码```，子表控件编码查看方式：[子表编码查看](/docs/check-code/#子表编码查看)  
+表单与系统表的表结构文档，请参考此文档：[数据库表结构详解](/docs/database/)  
+:::
 
-!> 由于该接口会直接影响数据表，请谨慎执行 **增删改** 三类SQL语句，有 **增删改** 的需求请尽量通过操作业务对象实现。
-<br/>
+::: warning
+由于该接口会直接影响数据表，请谨慎执行 **增删改** 三类SQL语句，有 **增删改** 的需求请尽量通过操作业务对象实现。  
 若因用户执行 **增删改** 三类SQL语句，造成表单数据异常而无法查询，或者因修改系统表数据导致氚云无法使用，解决办法只能找运维恢复数据（收费）。
 
-!> 为了防止用户滥用或执行低效SQL，从而对系统性能造成过大影响， ```engine.Query.QueryTable``` 接口有执行超时机制，耗时超过 **30秒** ，则SQL语句执行失败，并抛出异常，异常消息示例：
-<br/>```Timeout in IO operation``` 或者 ```Connection must be valid and open to rollback transaction```
-<br/>一旦出现此类情况，请优化SQL，提升效率，或者将执行逻辑拆分，分批多次执行。
+为了防止用户滥用或执行低效SQL，从而对系统性能造成过大影响， ```engine.Query.QueryTable``` 接口有执行超时机制，耗时超过 **30秒** ，则SQL语句执行失败，并抛出异常，异常消息示例：  
+```Timeout in IO operation``` 或者 ```Connection must be valid and open to rollback transaction```，  
+一旦出现此类情况，请优化SQL，提升效率，或者将执行逻辑拆分，分批多次执行。
+:::
 
 以下是接口使用示例：
-
 
 ## 调用执行SELECT语句
 

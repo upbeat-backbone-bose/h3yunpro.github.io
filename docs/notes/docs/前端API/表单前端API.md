@@ -51,7 +51,7 @@ OnLoad: function() {
 
 在表单前端代码中，有一个全局变量 ```$.SmartForm.ResponseContext```，该变量是一个对象，可用于获取到表单的相关信息，包含表单的基本信息（如：表单数据Id、表单数据状态、表单模式、是否移动端等）。
 
-此处只做常用属性介绍，完整说明请移步：[前端实例详解：$.SmartForm.ResponseContext](/docs/js-instance?id=smartformresponsecontext)
+此处只做常用属性介绍，完整说明请移步：[前端实例详解：$.SmartForm.ResponseContext](/docs/js-instance/#smartform-responsecontext)
 
 **示例**
 
@@ -296,7 +296,7 @@ var rowCount = that.子表编码.GetRowsCount();
 
 ## 前端Ajax请求后端
 
-利用Ajax技术，异步请求后端，触发表单后端OnSubmit事件，[使用示例](/docs/js-example?id=表单前端onload事件-bindchange-post-请求后端)。
+利用Ajax技术，异步请求后端，触发表单后端OnSubmit事件，[使用示例](/docs/interactive-example/#表单-前端onload事件-bindchange-post-请求后端)。
 
 ``` js
 $.SmartForm.PostForm(

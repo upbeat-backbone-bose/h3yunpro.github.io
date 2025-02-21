@@ -15,7 +15,7 @@ var selectedDatas = $.ListView.GetSelected();
 
 ## 列表前端Post请求后端
 
-利用Ajax技术，异步请求后端，触发列表后端OnSubmit事件，[使用示例](/docs/pure-example?id=列表post)。
+利用Ajax技术，异步请求后端，触发列表后端OnSubmit事件，[使用示例](/docs/pure-example/#列表-post)。
 
 ``` js
 $.ListView.Post(

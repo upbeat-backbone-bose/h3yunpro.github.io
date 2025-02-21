@@ -10,4 +10,6 @@ permalink: /docs/req-ws/
 
 但考虑到有些开发者更熟悉 ```WebService``` 的对接方式，所以这里也提供了一个 ```.NET``` 的 ```WebService Demo``` 以供参考：[.NET WebService Demo](https://gitee.com/h3yun-pro-public/h3yun-demo/tree/main/WebServiceDemo)
 
-!> PS：本文档将不会对氚云调用 ```WebService``` 做出详细说明，如有需要，请前往[官方文档](https://help.h3yun.com/contents/1126/2234.html)。
+::: warning
+本文档将不会对氚云调用 ```WebService``` 做出详细说明，如有需要，请前往[官方文档](https://help.h3yun.com/contents/1126/2234.html)。
+:::
