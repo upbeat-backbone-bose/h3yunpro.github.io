@@ -50,6 +50,19 @@
 }
 
 /* 隐藏打印按钮 */
-.vpi-print{
+.vpi-print {
   display: none !important;
+}
+
+/* 代码块展开折叠后，折叠按钮会影响横向滚动条，此处做个隐藏处理 */
+.vp-doc div[class*="language-"].has-collapsed:not(.collapsed) .collapsed-lines {
+  display: none !important;
+}
+
+.vp-doc div[class*="language-"].has-collapsed:not(.collapsed) code {
+  padding-bottom: 0 !important;
+}
+
+.vp-doc div[class*="language-"].has-collapsed .collapsed-lines {
+  display: flex !important;
 }
