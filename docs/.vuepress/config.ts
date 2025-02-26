@@ -86,7 +86,7 @@ export default defineUserConfig({
        * @see https://theme-plume.vuejs.press/config/plugins/code-highlight/
        */
       shiki: {
-        theme: { light: 'material-theme-lighter', dark: 'material-theme-darker' },
+        theme: { light: 'one-light', dark: 'one-dark-pro' },
         // 强烈建议预设代码块高亮语言，插件默认加载所有语言会产生不必要的时间开销
         languages: ['c#', 'sql', 'typescript', 'javascript', 'json'],
         twoslash: false, // 启用 twoslash

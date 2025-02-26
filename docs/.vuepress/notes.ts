@@ -2,7 +2,7 @@ import { defineNoteConfig, defineNotesConfig } from 'vuepress-theme-plume'
 
 const docsNote = defineNoteConfig({
   dir: 'docs',
-  link: '/',
+  link: '/docs/',
   sidebar: [{
     text: '基础',
     prefix: '/',
