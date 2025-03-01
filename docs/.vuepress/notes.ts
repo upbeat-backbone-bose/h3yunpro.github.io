@@ -6,7 +6,7 @@ const docsNote = defineNoteConfig({
   sidebar: [{
     text: '基础',
     prefix: '/',
-    icon: 'mdi:book-open-outline',
+    icon: 'vscode-icons:file-type-chef-cookbook',
     collapsed: true,
     items: [
       '/docs/language/',
@@ -19,7 +19,7 @@ const docsNote = defineNoteConfig({
   }, {
     text: '前端API',
     prefix: '/',
-    icon: 'mdi:code-tags',
+    icon: 'vscode-icons:file-type-js',
     collapsed: true,
     items: [
       '/docs/form-js-api/',
@@ -30,7 +30,7 @@ const docsNote = defineNoteConfig({
   }, {
     text: '后端API',
     prefix: '/',
-    icon: 'mdi:server',
+    icon: 'vscode-icons:file-type-csharp',
     collapsed: true,
     items: [
       '/docs/biz-object/',
@@ -46,7 +46,7 @@ const docsNote = defineNoteConfig({
   }, {
     text: '数据库',
     prefix: '/',
-    icon: 'mdi:database-outline',
+    icon: 'vscode-icons:file-type-plsql',
     collapsed: true,
     items: [
       '/docs/sql-report/',
@@ -56,7 +56,7 @@ const docsNote = defineNoteConfig({
   }, {
     text: '代码示例',
     prefix: '/',
-    icon: 'mdi:code-json',
+    icon: 'vscode-icons:file-type-affinitydesigner',
     collapsed: true,
     items: [
       '/docs/js-example/',
@@ -69,7 +69,7 @@ const docsNote = defineNoteConfig({
   }, {
     text: '第三方系统集成',
     prefix: '/',
-    icon: 'mdi:share-variant-outline',
+    icon: 'vscode-icons:file-type-rnc',
     collapsed: true,
     items: [
       '/docs/req-ws/',
@@ -82,7 +82,7 @@ const docsNote = defineNoteConfig({
   }, {
     text: '其他',
     prefix: '/',
-    icon: 'mdi:toolbox-outline',
+    icon: 'vscode-icons:file-type-rust-toolchain',
     collapsed: true,
     items: [
       '/docs/automation/',
