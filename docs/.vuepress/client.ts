@@ -7,6 +7,8 @@ import { defineClientConfig } from 'vuepress/client'
 
 import './theme/styles/custom.css'
 
+import sql2api from './plugs/sql2api/sql2api.vue'
+
 export default defineClientConfig({
   enhance({ app }) {
     // built-in components
@@ -15,7 +17,6 @@ export default defineClientConfig({
     // app.component('NpmBadgeGroup', NpmBadgeGroup)
     // app.component('Swiper', Swiper) // you should install `swiper`
 
-    // your custom components
-    // app.component('sql2api', sql2api)
+    app.component('sql2api', sql2api)
   },
 })

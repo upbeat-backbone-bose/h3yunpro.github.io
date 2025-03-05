@@ -12,7 +12,7 @@ npm i
 
 ```sh
 # 启动开发服务
-npm run docs:dev
+npm run ddc
 # 构建生产包
 npm run docs:build
 # 本地预览生产服务

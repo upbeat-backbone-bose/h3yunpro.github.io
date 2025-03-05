@@ -58,3 +58,8 @@
 .vp-doc div[class*="language-"].has-collapsed .collapsed-lines {
   display: flex !important;
 }
+
+/* 博客页面logo取消圆形框 */
+.vp-blog-profile .circle img {
+  border-radius: 0 !important;
+}

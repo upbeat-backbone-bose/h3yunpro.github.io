@@ -10,6 +10,7 @@
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:dev-clean": "vuepress dev docs --clean-cache --clean-temp",
+    "ddc": "vuepress dev docs --clean-cache --clean-temp",
     "docs:build": "vuepress build docs --clean-cache --clean-temp",
     "docs:preview": "http-server ./docs/.vuepress/dist",
     "vp-update": "npx vp-update"
@@ -26,5 +27,7 @@
     "vuepress-theme-plume": "1.0.0-rc.129"
   },
   "dependencies": {
+    "copy-to-clipboard": "^3.3.3",
+    "node-sql-parser": "^5.3.7"
   }
 }
