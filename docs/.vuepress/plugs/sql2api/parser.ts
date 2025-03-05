@@ -191,7 +191,6 @@ function convertToMatcher(item: Binary, matcher: Matcher) {
             if (typeof (item.right as ExprList).value === 'undefined') {
                 throw new Error('where语句转换失败, LoadBizObjects筛选条件值不能为空');
             }
-            console.log(item)
             matcher.Matchers.push({
                 'Type': 'Item',
                 'Name': (item.left as ColumnRefItem).column,
