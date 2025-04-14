@@ -41,6 +41,11 @@
 } 
 */
 
+.logo {
+  /* 禁用选中拖动logo */
+  user-select: none;
+}
+
 /* 隐藏打印按钮 */
 .vpi-print {
   display: none !important;
@@ -62,4 +67,6 @@
 /* 博客页面logo取消圆形框 */
 .vp-blog-profile .circle img {
   border-radius: 0 !important;
+  /* 禁用选中拖动logo */
+  user-select: none;
 }
