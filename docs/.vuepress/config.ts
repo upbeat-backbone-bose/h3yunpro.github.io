@@ -4,7 +4,7 @@ import { plumeTheme } from 'vuepress-theme-plume'
 
 
 export default defineUserConfig({
-  base: '/',
+  base: '/<REPO>/',
   lang: 'zh-CN',
   title: '氚专开发者扩展文档',
   description: '氚云文档,氚云专业版文档,氚云开发者文档,氚云专业版开发者扩展文档',
