@@ -11,17 +11,7 @@ export default defineUserConfig({
 
   head: [
     // 配置站点图标
-    ['link', { rel: 'icon', type: 'image/png', href: '/logo.png' }],
-    //配置百度分析
-    ['script', {}, `
-      var _hmt = _hmt || [];
-      (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?3ebded631a588622afe51344cf018299";
-        var s = document.getElementsByTagName("script")[0]; 
-        s.parentNode.insertBefore(hm, s);
-      })();
-    `]
+    ['link', { rel: 'icon', type: 'image/png', href: '/logo.png' }]
   ],
 
   bundler: webpackBundler(),
