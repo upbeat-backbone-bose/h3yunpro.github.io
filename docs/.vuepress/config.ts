@@ -37,6 +37,14 @@ export default defineUserConfig({
     // docsDir: 'docs',
     // docsBranch: '',
 
+    copyright: {
+      license: {
+        name: 'CC-BY-4.0', // 许可证名称
+        url: 'https://github.com/h3yunpro/h3yunpro.github.io?tab=CC-BY-4.0-1-ov-file#readme' // 许可证地址
+      },
+      creation: 'original', // 创作方式
+    },
+
     /* 页内信息 */
     editLink: false,
     lastUpdated: {
@@ -98,6 +106,7 @@ export default defineUserConfig({
         whitespace: false, // 启用 空格/Tab 高亮
         lineNumbers: true, // 启用行号
         collapsedLines: true, //折叠代码
+        notationDiff: true,//启用差异标记
       },
 
       /* 本地搜索, 默认启用 */
