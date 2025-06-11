@@ -37,13 +37,13 @@ export default defineUserConfig({
     // docsDir: 'docs',
     // docsBranch: '',
 
-    copyright: {
-      license: {
-        name: 'CC-BY-4.0', // 许可证名称
-        url: 'https://github.com/h3yunpro/h3yunpro.github.io?tab=CC-BY-4.0-1-ov-file#readme' // 许可证地址
-      },
-      creation: 'original', // 创作方式
-    },
+    // copyright: {
+    //   license: {
+    //     name: 'CC-BY-4.0', // 许可证名称
+    //     url: 'https://github.com/h3yunpro/h3yunpro.github.io?tab=CC-BY-4.0-1-ov-file#readme' // 许可证地址
+    //   },
+    //   creation: 'original', // 创作方式
+    // },
 
     /* 页内信息 */
     editLink: false,
