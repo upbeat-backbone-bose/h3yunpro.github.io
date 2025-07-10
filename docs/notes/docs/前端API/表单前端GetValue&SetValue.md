@@ -367,25 +367,25 @@ var location = that.控件编码.GetValue();
 
 /*
 未录入位置时：
-{"Address":"","Point":{"lat":0,"lng":0}}
+{"Address":"","Point":{"lat":0,"lng":0},"CSType":2,"WGS84Point":{"lng":0,"lat":0}}
 
 已录入位置时：
-{"Address":"广东省深圳市南山区粤海街道科兴科学园A2单元南山科兴科学园","Point":{"lat":22.54907,"lng":113.942346}}
+{"Address":"广东省深圳市南山区粤海街道南山科兴科学园C2栋","Point":{"lat":22.547421,"lng":113.944386},"CSType":2,"WGS84Point":{"lng":113.93950766274739,"lat":22.550433917423504}}
 */
 
 //因为位置控件特殊，判断用户是否录入，就直接跟JSON进行判断了
-if( location !== undefined && location !== null && location !== "" && location !== '{"Address":"","Point":{"lat":0,"lng":0}}' ) {
+if( location && location !== '{"Address":"","Point":{"lat":0,"lng":0},"CSType":2,"WGS84Point":{"lng":0,"lat":0}}' ) {
     //用户录入了位置
 }
 
-if( location === undefined || location === null || location === "" || location === '{"Address":"","Point":{"lat":0,"lng":0}}' ) {
+if( !location || location === '{"Address":"","Point":{"lat":0,"lng":0},"CSType":2,"WGS84Point":{"lng":0,"lat":0}}' ) {
     //用户没有录入位置
 }
 ```
 
 赋值：
 ``` js
-that.控件编码.SetValue('{"Address":"广东省深圳市南山区粤海街道科兴科学园A2单元南山科兴科学园","Point":{"lat":22.54907,"lng":113.942346}}');
+that.控件编码.SetValue('{"Address":"广东省深圳市南山区粤海街道南山科兴科学园C2栋","Point":{"lat":22.547421,"lng":113.944386},"CSType":2,"WGS84Point":{"lng":113.93950766274739,"lat":22.550433917423504}}');
 ```
 
 清空控件值：
