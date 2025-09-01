@@ -8,7 +8,7 @@ export const navbar = defineNavbarConfig([
     text: '文档', link: '/docs/language/'
   },
   {
-    text: '插件', link: '/blog/tags/?tag=插件'
+    text: '工具箱', link: '/blog/tags/?tag=工具箱'
   },
   {
     text: '更新说明', link: '/blog/tags/?tag=更新说明'
