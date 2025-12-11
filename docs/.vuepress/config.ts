@@ -17,6 +17,7 @@ export default defineUserConfig({
   bundler: webpackBundler(),
   shouldPrefetch: false, // 站点较大，页面数量较多时，不建议启用
 
+  pagePatterns: ['**/*.md', '!**/*.snippet.md', '!.vuepress', '!node_modules'],
   theme: plumeTheme({
     /* 添加您的部署域名, 有助于 SEO, 生成 sitemap */
     hostname: 'https://h3yunpro.github.io/',
@@ -25,6 +26,14 @@ export default defineUserConfig({
     docsRepo: 'https://github.com/h3yunpro/h3yunpro.github.io.git',
     // docsDir: 'docs',
     // docsBranch: '',
+
+    // copyright: {
+    //   license: {
+    //     name: 'CC-BY-4.0', // 许可证名称
+    //     url: 'https://github.com/h3yunpro/h3yunpro.github.io?tab=CC-BY-4.0-1-ov-file#readme' // 许可证地址
+    //   },
+    //   creation: 'original', // 创作方式
+    // },
 
     /* 页内信息 */
     editLink: false,
@@ -49,6 +58,10 @@ export default defineUserConfig({
       categories: true, // 是否启用分类页
       postCover: 'right', // 文章封面位置
       pagination: 15, // 每页显示文章数量
+    },
+
+    markdown: {
+      // codeTree: true,// 启用代码树
     },
 
     /* 博客文章页面链接前缀 */
@@ -76,13 +89,14 @@ export default defineUserConfig({
        * @see https://theme-plume.vuejs.press/config/plugins/code-highlight/
        */
       shiki: {
-        theme: { light: 'one-light', dark: 'one-dark-pro' },
+        themes: { light: 'one-light', dark: 'one-dark-pro' },
         // 强烈建议预设代码块高亮语言，插件默认加载所有语言会产生不必要的时间开销
-        languages: ['c#', 'sql', 'typescript', 'javascript', 'json'],
+        langs: ['c#', 'sql', 'typescript', 'javascript', 'json'],
         twoslash: false, // 启用 twoslash
         whitespace: false, // 启用 空格/Tab 高亮
         lineNumbers: true, // 启用行号
         collapsedLines: true, //折叠代码
+        notationDiff: true,//启用差异标记
       },
 
       /* 本地搜索, 默认启用 */

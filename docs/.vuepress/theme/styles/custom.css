@@ -41,25 +41,32 @@
 } 
 */
 
+.logo {
+  /* 禁用选中拖动logo */
+  user-select: none;
+}
+
 /* 隐藏打印按钮 */
 .vpi-print {
   display: none !important;
 }
 
 /* 代码块展开折叠后，折叠按钮会影响横向滚动条，此处做个隐藏处理 */
-.vp-doc div[class*="language-"].has-collapsed:not(.collapsed) .collapsed-lines {
+.vp-doc div[class*="language-"].has-collapsed-lines:not(.collapsed) .collapsed-lines {
   display: none !important;
 }
 
-.vp-doc div[class*="language-"].has-collapsed:not(.collapsed) code {
+.vp-doc div[class*="language-"].has-collapsed-lines:not(.collapsed) code {
   padding-bottom: 0 !important;
 }
 
-.vp-doc div[class*="language-"].has-collapsed .collapsed-lines {
+.vp-doc div[class*="language-"].has-collapsed-lines .collapsed-lines {
   display: flex !important;
 }
 
 /* 博客页面logo取消圆形框 */
 .vp-blog-profile .circle img {
   border-radius: 0 !important;
+  /* 禁用选中拖动logo */
+  user-select: none;
 }
